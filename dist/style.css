@@ -22,11 +22,25 @@
     grid-column: 2/3;
     grid-row: 2/3;
     outline: black solid 1px;
+    padding-left: 35px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 2fr 2fr 2fr 2fr;
 }
 
 .proj {
-    height: 100px;
-    width: 50px;
-    background-color: black;
+    height: 300px;
+    width: 200px;
+    outline: black solid 1px;
 
+}
+
+.holder-title {
+    grid-column: 1/5;
+    grid-row: 1/2;
+}
+
+.proj-holder {
+    grid-column: 1/5;
+    grid-row: 2/5;
 }

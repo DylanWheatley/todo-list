@@ -1,1 +1,1 @@
-(()=>{"use strict";!function(e,t,c){const d=document.querySelector("#cardholder"),n=document.createElement("div");n.classList.add("proj"),d.appendChild(n)}()})();
+(()=>{"use strict";const e=function(e,a,t){const h=document.querySelector("#cardholder"),y=document.createElement("div");return y.classList.add("proj"),h.appendChild(y),{title:e,description:a,due:t,projDiv:y,container:h}};e("yeah","yeah","yeah"),e("yeah","yeah","yeah"),e("yeah","yeah","yeah"),e("yeah","yeah","yeah")})();

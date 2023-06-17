@@ -16,3 +16,6 @@
 import { newProject } from "./project-maker";
 
 const first = newProject("yeah", "yeah", "yeah");
+const sec = newProject("yeah", "yeah", "yeah");
+const third = newProject("yeah", "yeah", "yeah");
+const four = newProject("yeah", "yeah", "yeah");
