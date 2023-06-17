@@ -1,7 +1,6 @@
 //to do list project
 
 //ability to make a project and display them
-//simple header, sidebar, and big open space
 
 //module for making a new project
 //title, description, due date, priority (color coordinated?) bonus: notes or checklist
@@ -13,3 +12,7 @@
 //delete projects
 
 //local storage
+
+import { newProject } from "./project-maker";
+
+const first = newProject("yeah", "yeah", "yeah");

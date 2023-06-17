@@ -23,3 +23,10 @@
     grid-row: 2/3;
     outline: black solid 1px;
 }
+
+.proj {
+    height: 100px;
+    width: 50px;
+    background-color: black;
+
+}
