@@ -1,8 +1,8 @@
 //to do list project
 
-//ability to make a project and display them
 
-//module for making a new project
+
+
 //title, description, due date, priority (color coordinated?) bonus: notes or checklist
 
 //module for switching between viewing each project
@@ -15,7 +15,17 @@
 
 import { newProject } from "./project-maker";
 
-const first = newProject("yeah", "yeah", "yeah");
-const sec = newProject("yeah", "yeah", "yeah");
-const third = newProject("yeah", "yeah", "yeah");
-const four = newProject("yeah", "yeah", "yeah");
+const add = document.querySelector(".add");
+const addInput = document.querySelector(".project-title");
+
+addInput.value = "";
+
+add.addEventListener('click', () => {
+    let newTitle = addInput.value;
+    const projectAdd = newProject(newTitle);
+    addInput.value = "";
+
+})
+// const sec = newProject("yeah", "yeah", "yeah");
+// const third = newProject("yeah", "yeah", "yeah");
+// const four = newProject("yeah", "yeah", "yeah");

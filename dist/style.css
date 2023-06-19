@@ -3,19 +3,26 @@
 .container {
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 8fr;
+    grid-template-rows: 1fr 12fr;
+    height: 100%;
 }
 
 #header {
     grid-column: 1/3;
     grid-row: 1/2;
     outline: black solid 1px;
+    padding-left: 15px;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
 }
 
 #sidebar {
     grid-column: 1/2;
     grid-row: 2/3;
     outline: black solid 1px;
+    padding-left: 15px;
 }
 
 #cardholder {
@@ -31,7 +38,9 @@
 .proj {
     height: 300px;
     width: 200px;
-    outline: black solid 1px;
+    outline: black solid 4px;
+    margin-bottom: 15px;
+    padding: 5px;
 
 }
 
@@ -44,3 +53,32 @@
     grid-column: 1/5;
     grid-row: 2/5;
 }
+
+.header-title {
+    margin: 0;
+}
+
+.header-holder {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.input-div {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+}
+
+.project-title {
+    width: 20%;
+
+}
+
+.add {
+    width: 10%;
+    margin-left: 4rem;
+
+}
+
