@@ -15,8 +15,12 @@
 
 import { newProject } from "./project-maker";
 
+
 const add = document.querySelector(".add");
 const addInput = document.querySelector(".project-title");
+
+const exProj = newProject("Example");
+const desAdd = document.querySelectorAll(".desAdd");
 
 addInput.value = "";
 
@@ -26,6 +30,5 @@ add.addEventListener('click', () => {
     addInput.value = "";
 
 })
-// const sec = newProject("yeah", "yeah", "yeah");
-// const third = newProject("yeah", "yeah", "yeah");
-// const four = newProject("yeah", "yeah", "yeah");
+
+

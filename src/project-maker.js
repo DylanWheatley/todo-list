@@ -7,6 +7,7 @@ const newProject = function (title) {
     const projDiv = document.createElement("div");
 
     projDiv.classList.add("proj");
+    
 
     const projTitle = document.createElement("p");
     projTitle.textContent = title;
@@ -15,7 +16,11 @@ const newProject = function (title) {
     desAdd.classList.add("desAdd");
     desAdd.textContent = "Add Description";
 
-    desAdd.addEventListener('click', descriptionAdder);
+    desAdd.addEventListener('click', () => {
+        desAdd.textContent = "Please!!";
+    })
+
+
 
 
 
@@ -31,7 +36,7 @@ const newProject = function (title) {
 
 
 
-    return {title, projDiv, container};
+    return {title, projDiv, container, desAdd};
 };
 
 export {newProject};
