@@ -1,4 +1,5 @@
 import { projDisplay } from "./projDisplay";
+import { projOpen } from "./projOpen";
 
 const Project = function (title) {
 
@@ -47,13 +48,18 @@ const Project = function (title) {
             projDiv.appendChild(des);
 
             const tabBtn = document.createElement("button");
-            tabBtn.textContent = "Open Project";
-            tabBtn.classList.add("tab");
-            tabBtn.value = title;
+                tabBtn.textContent = "Open Project";
+                tabBtn.classList.add("tab");
+                tabBtn.value = title;
+
+            tabBtn.addEventListener('click', projOpen(tabBtn.value))
+
+            projDiv.appendChild(tabBtn);
+            })
+
 
             
-            projDiv.appendChild(tabBtn);
-        })
+        
 
         projDiv.appendChild(desInput);
         projDiv.appendChild(desBtn)

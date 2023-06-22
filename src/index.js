@@ -42,10 +42,7 @@ projDisplay(projArray);
 baseProj();
 
 
-//NTN: Need to rework code a bit. Need to make (another module?) function to loop through the project array and display all the cards. Inside of
-//that loop is the check for if the description is empty or not.
 
-//NTN2: Need to separate code a bit more. Need one module that makes the card. One module that puts the card on the screen. Doesn't work as currently written
 
 
 

@@ -2,6 +2,9 @@
 
 const projOpen = function (projName) {
 
+    const holderTitle = document.createElement("h1");
+    holderTitle.textContent = projName;
+
     const container = document.querySelector(".container");
 
     const cardholder = document.querySelector(".cardholder");
@@ -11,6 +14,9 @@ const projOpen = function (projName) {
     tabDiv.classList.add("tabDiv");
 
     container.appendChild(tabDiv);
+    tabDiv.appendChild(holderTitle);
 
-    return{tabDiv, container};
+    return{tabDiv, container, holderTitle};
 }
+
+export {projOpen};
