@@ -1,6 +1,7 @@
 import { projDisplay } from "./projDisplay";
 import { projOpen } from "./projOpen";
 
+
 const Project = function (title) {
 
     const container = document.querySelector(".cardholder");
@@ -52,12 +53,17 @@ const Project = function (title) {
                 tabBtn.classList.add("tab");
                 tabBtn.value = title;
 
-            tabBtn.addEventListener('click', projOpen(tabBtn.value))
-
-            projDiv.appendChild(tabBtn);
+            // tabBtn.addEventListener('click', projOpen(tabBtn.value))
+            tabBtn.addEventListener('click', () => {
+                projOpen(tabBtn.value);
             })
 
+            projDiv.appendChild(tabBtn);
 
+            })
+
+            
+            
             
         
 
