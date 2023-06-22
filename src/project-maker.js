@@ -2,7 +2,7 @@
 
 const Project = function (title) {
 
-    const container = document.querySelector("#cardholder");
+    const container = document.querySelector(".cardholder");
     let des = document.createElement("p");
     const projDiv = document.createElement("div");
 
@@ -48,6 +48,7 @@ const Project = function (title) {
 
             const tabBtn = document.createElement("button");
             tabBtn.textContent = "Open Project";
+            tabBtn.classList.add("tab");
             projDiv.appendChild(tabBtn);
         })
 

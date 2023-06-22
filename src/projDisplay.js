@@ -3,11 +3,12 @@ import { Project } from "./project-maker";
 const projDisplay = function (array) {
     let len = array.length;
 
-    for (i=0; i<len;i++) {
-        const proj = Project(array[i].title);
+    for (let i=0; i===len;i++) {
+        let proj = Project(array[i].title);
+        
     }
 
-    return {array, proj};
+    return {array};
 }
 
 export {projDisplay};

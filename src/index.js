@@ -21,6 +21,7 @@ let projArray = [];
 
 projArray[0] = Project("Example");
 
+
 function baseProj (){
     const add = document.querySelector(".add");
     const addInput = document.querySelector(".project-title");
@@ -33,13 +34,11 @@ function baseProj (){
 
         projArray.push(projectAdd);
         addInput.value = "";
-
-        console.log(projArray);
     })
 
 }
 
-projDisplay();
+projDisplay(projArray);
 baseProj();
 
 
