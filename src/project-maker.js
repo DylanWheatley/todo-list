@@ -1,4 +1,4 @@
-
+import { projDisplay } from "./projDisplay";
 
 const Project = function (title) {
 
@@ -49,6 +49,9 @@ const Project = function (title) {
             const tabBtn = document.createElement("button");
             tabBtn.textContent = "Open Project";
             tabBtn.classList.add("tab");
+            tabBtn.value = title;
+
+            
             projDiv.appendChild(tabBtn);
         })
 

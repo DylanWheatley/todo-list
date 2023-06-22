@@ -8,7 +8,7 @@ const projDisplay = function (array) {
         
     }
 
-    return {array};
+    return {array, len};
 }
 
 export {projDisplay};

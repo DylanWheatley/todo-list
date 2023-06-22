@@ -82,3 +82,9 @@
 
 }
 
+.tabDiv {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    outline: black solid 1px;
+    padding-left: 35px;
+}
