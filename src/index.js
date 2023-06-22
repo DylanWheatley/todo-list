@@ -14,15 +14,16 @@
 //local storage
 
 import { Project } from "./project-maker";
+import { projDisplay } from "./projDisplay";
 
 
 let projArray = [];
 
+projArray[0] = Project("Example");
+
 function baseProj (){
     const add = document.querySelector(".add");
     const addInput = document.querySelector(".project-title");
-
-    const exProj = Project("Example");
 
     addInput.value = "";
 
@@ -38,6 +39,7 @@ function baseProj (){
 
 }
 
+projDisplay();
 baseProj();
 
 
