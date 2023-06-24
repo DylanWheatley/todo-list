@@ -1,9 +1,12 @@
 
 
-const projOpen = function (projName) {
+const projOpen = function (projName, projDes) {
 
     const holderTitle = document.createElement("h1");
     holderTitle.textContent = projName;
+
+    const desTxt = document.createElement("p");
+    desTxt.textContent = projDes;
 
     const container = document.querySelector(".container");
 
@@ -15,6 +18,7 @@ const projOpen = function (projName) {
 
     container.appendChild(tabDiv);
     tabDiv.appendChild(holderTitle);
+    tabDiv.appendChild(desTxt);
 
     return{tabDiv, container, holderTitle};
 }

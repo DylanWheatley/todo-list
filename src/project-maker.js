@@ -55,7 +55,9 @@ const Project = function (title) {
 
             // tabBtn.addEventListener('click', projOpen(tabBtn.value))
             tabBtn.addEventListener('click', () => {
-                projOpen(tabBtn.value);
+
+                projOpen(tabBtn.value, des.textContent);
+
             })
 
             projDiv.appendChild(tabBtn);
